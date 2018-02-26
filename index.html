@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+        body {
+            padding: 50px;
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+            background-color: #fbfffd;
+        }
+
+        a {
+            color: #f5faff;
+        }
+
+        .add-task {
+            text-align: center;
+            margin: 0 auto 3%;
+            border: 1px solid #c6fffa;
+            padding: 2%;
+        }
+
+        #all-tasks {
+            border: 1px solid red;
+            min-width: 15%;
+            min-height: 15%;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- форма для отправки сообщений -->
+<form name="publish" class="add-task">
+  <input type="text" name="task"/>
+  <input type="submit" value="Отправить"/>
+</form>
+
+<!-- здесь будут появляться входящие сообщения -->
+<!-- <div id="subscribe"></div> -->
+<div id="all-tasks">
+    <h1>All tasks:</h1>
+</div>
+
+<script src="browser.js"></script>
+
+</body>
+</html>
